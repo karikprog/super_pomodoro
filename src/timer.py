@@ -44,9 +44,9 @@ class App(customtkinter.CTk):
                                                  corner_radius=8, command=self.tick_continue)
 
         # rest time
-        self.btnrest = customtkinter.CTkButton(self, text="Start rest", font=("Arial Rounded MT Bold", 20), width=140,
+        self.btnrest = customtkinter.CTkButton(self, text="Start break", font=("Arial Rounded MT Bold", 20), width=140,
                                                corner_radius=8, command=self.start_rest)
-        self.btnstoprest = customtkinter.CTkButton(self, text="Stop rest", font=("Arial Rounded MT Bold", 20),
+        self.btnstoprest = customtkinter.CTkButton(self, text="Stop break", font=("Arial Rounded MT Bold", 20),
                                                    width=140, corner_radius=8, command=self.stop_tickrest)
         self.btnreset_rest = customtkinter.CTkButton(self, text="Reset", font=("Arial Rounded MT Bold", 20), width=140,
                                                      corner_radius=8, command=self.rest_tick_reset)
@@ -197,7 +197,7 @@ class Settings(customtkinter.CTk):
         self.slider_pom_check.place(anchor=customtkinter.NW, relx=0.36, rely=0.009)
 
         # make rest size
-        self.restsize = customtkinter.CTkLabel(self, text="short rest size:", font=("Arial Rounded MT Bold", 15))
+        self.restsize = customtkinter.CTkLabel(self, text="short break size:", font=("Arial Rounded MT Bold", 15))
         self.restsize.place(anchor=customtkinter.NW, rely=0.2)
 
         # time value
@@ -205,7 +205,7 @@ class Settings(customtkinter.CTk):
         self.slider_rest_check.place(anchor=customtkinter.NW, relx=0.37, rely=0.209)
 
         # make long rest size
-        self.long_restsize = customtkinter.CTkLabel(self, text="long rest size:", font=("Arial Rounded MT Bold", 15))
+        self.long_restsize = customtkinter.CTkLabel(self, text="long break size:", font=("Arial Rounded MT Bold", 15))
         self.long_restsize.place(anchor=customtkinter.NW, rely=0.4)
 
         # time value
