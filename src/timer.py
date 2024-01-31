@@ -202,7 +202,7 @@ class Settings(customtkinter.CTk):
 
         # time value
         self.slider_rest_check = customtkinter.CTkLabel(self, text=time_rest)
-        self.slider_rest_check.place(anchor=customtkinter.NW, relx=0.37, rely=0.209)
+        self.slider_rest_check.place(anchor=customtkinter.NW, relx=0.4, rely=0.209)
 
         # make long rest size
         self.long_restsize = customtkinter.CTkLabel(self, text="long break size:", font=("Arial Rounded MT Bold", 15))
@@ -210,7 +210,7 @@ class Settings(customtkinter.CTk):
 
         # time value
         self.slider_longrest_check = customtkinter.CTkLabel(self, text=long_rest)
-        self.slider_longrest_check.place(anchor=customtkinter.NW, relx=0.35, rely=0.409)
+        self.slider_longrest_check.place(anchor=customtkinter.NW, relx=0.39, rely=0.409)
 
         # make pomodor cycle size
         self.pomcycle = customtkinter.CTkLabel(self, text="pomodor cycle size:", font=("Arial Rounded MT Bold", 15))
